@@ -14,7 +14,7 @@ export const Gauge = ({ min, max, current }) => {
 
     useEffect(() => {
         if (valueRange < 0) {
-            setError('Error: Max should be greater than min');
+            setError('Error: Max should be greater than Min');
             return;
         }
 
@@ -41,7 +41,7 @@ export const Gauge = ({ min, max, current }) => {
                     </div>
 
                     <div
-                        className="marker"
+                        className="marker" data-testid="position-element"
                         style={{ transform: `rotate(${position}deg)` }}
                     >
                         <div className='circle'></div>
