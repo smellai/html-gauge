@@ -61,3 +61,11 @@
 .side {
     margin-bottom: 60px;
 }
+
+.error {
+    color: red;
+}
+
+.error ~ .gauge {
+    visibility: hidden;
+}

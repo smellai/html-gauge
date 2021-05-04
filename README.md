@@ -1,4 +1,4 @@
-# Gauge chart JS+CSS only
+# Gauge chart React component - JS+CSS only
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
