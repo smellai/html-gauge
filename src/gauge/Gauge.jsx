@@ -13,7 +13,7 @@ export const Gauge = ({ min, max, current }) => {
     const position = ((current - min) / valueRange) * arcRange - arcRange / 2;
 
     useEffect(() => {
-        if (valueRange < 0) {
+        if (valueRange <= 0) {
             setError('Error: Max should be greater than Min');
             return;
         }
