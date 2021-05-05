@@ -39,7 +39,7 @@ test('renders Gauge with min < 0', () => {
 
 // Error cases
 
-test('min > max = error', () => {
+test('min >= max = error', () => {
   render(<Gauge min={500} max={100} current={80} />);
   const errorText = screen.getByText('Error: Max should be greater than Min');
   expect(errorText).toBeInTheDocument();
